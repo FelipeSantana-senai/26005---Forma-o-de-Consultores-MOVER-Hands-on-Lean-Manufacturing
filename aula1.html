@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html id="master" lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="Layout/Template/img/favicon.ico" />
+    <title>Senai</title>
+    <!-- Config -->
+    <script src="Layout/Template/js/main.js" defer></script>
+    <link rel="stylesheet" href="Layout/Template/css/theme.css">
+    <link rel="stylesheet" href="Layout/Template/css/style.css">
+    <link rel="stylesheet" href="Layout/Aula/css/add-style.css">
+    <!-- Lottie -->
+    <script src="Layout/Template/bibliotecas/lottie/lottie.js"></script>
+    <script src="Layout/Template/bibliotecas/lottie/lottie-interactivity.min.js"></script>
+    <!-- JQuery-->
+    <script type="text/javascript" src="Layout/Template/bibliotecas/jQuery-3.6.3/jquery-3.6.3.min.js"></script>
+    <!-- Bootstrap -->
+    <link href="Layout/Template/bibliotecas/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="Layout/Template/bibliotecas/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <!-- UiKit-->
+    <link href="Layout/Template/bibliotecas/uikit/css/uikit.min.css" rel="stylesheet" />
+    <script src="Layout/Template/bibliotecas/uikit/js/uikit.min.js" async></script>
+    <script src="Layout/Template/bibliotecas/uikit/js/uikit-icons.min.js" async></script>
+    <!-- BoxIcons -->
+    <link href="Layout/Template/bibliotecas/boxicons/css/boxicons.min.css" rel='stylesheet'>
+    <script src="Layout/Template/bibliotecas/boxicons/boxicons.js" defer></script>
+    <!-- H5p-player -->
+    <script type="text/javascript" src="Layout/Template/bibliotecas/h5p-player/dist/main.bundle.js"></script>
+    <!-- GOOGLE TRANSLATE -->
+    <script src="Layout/Template/js/google.js" type="text/javascript" defer></script>
+    <!-- SCORM -->
+    <script src="Layout/Template/scorm/APIWrapper.js" defer></script>
+    <script src="Layout/Template/scorm/SCOFunctions.js" defer></script>
+    <!-- BoxIcons -->
+    <script src="Layout/Template/bibliotecas/boxicons/boxicons.js"></script>
+    <link href="Layout/Template/bibliotecas/boxicons/css/boxicons.min.css" rel='stylesheet'>
+    <!-- Prism  -->
+    <script src="Layout/Template/bibliotecas/prism/js/prism.js"></script>
+    <link href="Layout/Template/bibliotecas/prism/css/prism.css" rel='stylesheet'>
+    <!-- VIDEO DO YOUTUBE -->
+    <link href="Layout/Template/bibliotecas/youtube/css/youtube-chapters.min.css" rel="stylesheet" />
+    <!-- Grafico -->
+    <script src="Layout/Template/bibliotecas/charts/chart.js"></script>
+    <!-- Fancybox -->
+    <link rel="stylesheet" href="Layout/Template/bibliotecas/fancybox/fancybox.css">
+    <!-- webtour -->
+    <link rel="stylesheet" href="Layout/Template/bibliotecas/webtour/introjs.min.css">
+
+    <!-- IntroJS custom overrides -->
+    <style>
+        .customTooltip.introjs-tooltip {
+            max-width: min(380px, calc(100vw - 40px));
+            min-width: 280px;
+        }
+
+        .customTooltip .introjs-tooltip-header {
+            padding: 6px 20px 0;
+            min-height: 0;
+        }
+
+        .customTooltip .introjs-tooltip-title {
+            display: none;
+        }
+
+        .customTooltip .introjs-tooltiptext {
+            padding: 8px 20px 0;
+        }
+
+        .customTooltip .introjs-tooltiptext p {
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        .customTooltip .introjs-dontShowAgain {
+            display: flex;
+            align-items: center;
+            padding: 6px 20px 8px;
+        }
+
+        .customTooltip .introjs-dontShowAgain input[type="checkbox"] {
+            width: auto !important;
+            height: auto !important;
+            margin: 0 6px 0 0;
+            flex-shrink: 0;
+            display: inline !important;
+        }
+
+        .customTooltip .introjs-dontShowAgain label {
+            font-size: 13px !important;
+            margin: 0;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .customTooltip .introjs-tooltipbuttons {
+            padding: 6px 10px;
+        }
+
+        @media (max-width: 480px) {
+            .customTooltip.introjs-tooltip {
+                max-width: calc(100vw - 30px);
+            }
+
+            .customTooltip .introjs-dontShowAgain label {
+                white-space: normal;
+                font-size: 12px !important;
+            }
+        }
+    </style>
+</head>
+
+<body class="font">
+    <header>
+        <div id="google_translate_element"></div>
+        <!-- Vlibras -->
+        <div vw class="enabled">
+            <div id="vlibras-show" vw-access-button class="#"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+        <!-- Menu -->
+        <nav class="navbar-dark bg-menu-color fixed-top nav-height">
+            <div class="d-flex bd-highlight align-items-center g-2 nav-height">
+                <div class="bd-highlight">
+                    <button class="btn  align-items-center ms-2" data-bs-toggle="offcanvas"
+                        data-bs-target="#nav-menu-open-close" aria-controls="nav-menu-open-close"> <i
+                            class='cor1 bx  bx-menu bx-tada-hover'></i> </button>
+                </div>
+                <div class="bd-highlight mx-auto">
+                    <img src="Layout/Template/img/logo_senai-dn.svg" class="d-none d-lg-block img-fluid"
+                        alt="Senai Logo" style="margin-left:150px; max-width:160px;">
+                    <img src="Layout/Template/img/logo_senai-dn.svg" class="d-md-block d-lg-none" alt="Senai Logo"
+                        style="margin-top: 5px;max-width: 120px; ">
+                </div>
+                <div class="bd-highlight">
+                    <div class="d-flex bd-highlight align-items-center nav-height">
+                        <div class="form-check form-check-inline switch-group">
+                            <input class="form-check-input d-none" type="checkbox" name="themeBtns" id="themeSwitcher"
+                                aria-label="botão de mudança de tema" title="botão de mudança de tema">
+                            <label class="form-check-label" for="themeSwitcher">
+                                <div class="switch-darkmode">
+                                    <div class="icons">
+                                        <i class='bx bx-moon bx-tada-hover' title="tema escuro"></i>
+                                        <i class='bx bx-sun bx-spin-hover' title="tema claro"></i>
+                                    </div>
+                                    <div class="circle"></div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class=" d-flex flex-row align-middle ">
+                            <button class="btn" type="button" id="vlibrasToggle" title="visualizar vlibras"
+                                aria-pressed="true" aria-label="visualizar vlibras" onclick="vlibrashow()">
+                                <i class='vlibras-show bx bx-universal-access' style="margin-bottom: 0px;"
+                                    aria-label="visualizar vlibras"></i>
+                            </button>
+                        </div>
+                        <div class="dropdown me-2">
+                            <button class="btn text-white me-2" type="button" id="Acessibilidade"
+                                data-bs-toggle="dropdown" aria-expanded="falso" aria-label="Configuração"
+                                title="Configuração">
+                                <i class='bx bx-cog bx-spin-hover bx-sm'></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark menu-margin" aria-labelledby="Acessibilidade">
+                                <li class="dropdown-item">
+                                    <strong>Acessibilidade</strong>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a class="dropdown-item">
+                                        <div class="mb-3 form-check form-switch">
+                                            <input class="form-check-input " type="checkbox" name="themeBtns"
+                                                id="graySwitcher">
+                                            <label class="form-check-label menu" for="graySwitcher"
+                                                aria-label="visualização monocromático"
+                                                title="visualização monocromático">Modo
+                                                Monocromatico</label>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item">
+                                        <div class="mb-3 form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" name="themeBtns"
+                                                id="daltonicSwitcher">
+                                            <label class="form-check-label menu" for="daltonicSwitcher"
+                                                aria-label="visualização daltônico" title="visualização daltônico">Modo
+                                                Daltônico</label>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li class="dropdown-item">
+                                    <span class="menu">Tamanho da Fonte</span>
+                                    <br>
+                                    <input type="range" class="form-range" min="50" max="115" step="5" id="size"
+                                        aria-label="seletor de tamanho da fonte" title="seletor de tamanho da fonte">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="offcanvas offcanvas-start" data-bs-backdrop="true" data-bs-backdrop="static" tabindex="-1"
+                id="nav-menu-open-close" aria-labelledby="staticBackdropLabel">
+                <div class="offcanvas-header bg-menu-color">
+                    <p class="offcanvas-title white-text text-white" id="staticBackdropLabel">Menu</p> <button
+                        type="button" class="btn-close btn-close-white white-text text-white"
+                        data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body ">
+                    <!-- Menu -->
+                    <nav id="navbar-menu" class="flex-column align-items-stretch pe-4 my-5">
+                        <nav class="nav nav-pills flex-column" id="menu-container"></nav>
+                    </nav>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="uk-overflow-hidden" data-bs-spy="scroll" data-bs-offset="0">
+        <!-- Capa -->
+        <section>
+            <article
+                class="d-flex py-4 min-vh-100 flex-column justify-content-center uk-height-large uk-background-cover uk-overflow-hidden uk-light"
+                style="background-image: url('Layout/Aula/img/img1.jpg'); width: 100vw; margin-left: calc(-50vw + 50%);">
+                <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
+                    <div class="card mx-auto">
+                        <div class="row m-2 g-2">
+                            <h1 class="pt-3">Comportamento na consultoria</h1>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <div class="row g-2">
+                <div class="row position-absolute g-2" style="left: 0; right: 0; bottom: 4%; justify-content: center;">
+                    <div class="col-auto py-2 text-center">
+                        <div class="mouse"></div>
+                        <p class="uk-text-center mb-0">
+                            <span class="py-1 text-white px-3 rounded"
+                                style="background-color:rgba(0, 0, 0, 0.3)!important; border:0!important">Role para
+                                baixo</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- APRESENTACAO -->
+        <section class="d-flex pt-5 flex-column justify-content-center" id="aula2-section-1">
+            <article class="container">
+                <div class="align-self-start ">
+                    <div class="section-level1" style="border: none;">
+                        <h1>Rapport e condução de reuniões</h1>
+                    </div>
+                </div>
+                <div class="row g-2">
+                    <p>O objetivo é desenvolver o conjunto de boas práticas de atuação em campo que distingue o
+                        consultor técnico do consultor de alto impacto: a capacidade de construir confiança, conduzir
+                        processos de mudança e fazer o time enxergar e eliminar desperdícios por conta própria.</p>
+                    <p>É nesse cenário que as montadoras e a cadeia de autopeças são pressionadas a reduzir custos,
+                        elevar a produtividade e acelerar a melhoria contínua com prazos cada vez mais curtos. É
+                        exatamente aí que o Lean deixa de ser um diferencial e se torna uma exigência competitiva, e o
+                        consultor, um agente estratégico para que essas empresas transformem o compromisso regulatório
+                        em vantagem operacional real.
+                    </p>
+
+                    <i>Clique nas abas do quadro a seguir e confira dois pilares que devem orientar a atuação do
+                        consultor.</i>
+
+                    <div class="col-lg-10 mx-auto my-4">
+                        <div class="bd-example-snippet bd-code-snippet border rounded py-2 px-2">
+                            <div class="bd-example">
+                                <nav>
+                                    <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
+                                        <button class="nav-link active" id="nav1-1-tab" data-bs-toggle="tab"
+                                            data-bs-target="#nav1-1" type="button" role="tab" aria-controls="nav1-1"
+                                            aria-selected="false">Pilar 1: Rapport e Relações de Confiança</button>
+                                        <button class="nav-link" id="nav1-2-tab" data-bs-toggle="tab"
+                                            data-bs-target="#nav1-2" type="button" role="tab" aria-controls="nav1-2"
+                                            aria-selected="false">Pilar 2: Condução Eficaz de Reuniões</button>
+                                    </div>
+                                </nav>
+                                <div class="tab-content" id="nav-tabContent">
+                                    <div class="tab-pane fade show active" id="nav1-1" role="tabpanel"
+                                        aria-labelledby="nav1-1-tab">
+                                        <p class="ms-3">Antes de qualquer diagnóstico ou proposta, o consultor precisa
+                                            estabelecer confiança tanto com a liderança quanto com o chão de fábrica.
+                                        </p>
+                                        <ul class="ms-4">
+                                            <li><strong>Conexão real</strong>: exige escuta ativa, respeito à cultura
+                                                local e adaptação da linguagem para dialogar desde o diretor até o
+                                                operador.</li>
+                                            <li><strong>Quebra de resistência</strong>: o rapport transforma objeções em
+                                                colaboração, permitindo que críticas ao processo sejam vistas como
+                                                melhorias, e não como julgamentos.</li>
+                                        </ul>
+                                        <a data-fancybox="zoom" data-src="Layout/Aula/img/img12.jpg" data-caption="">
+                                            <img src="Layout/Aula/img/img12.jpg" class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="tab-pane fade" id="nav1-2" role="tabpanel" aria-labelledby="nav1-2-tab">
+                                        <p class="ms-3">No setor automotivo, reuniões malconduzidas desperdiçam recursos
+                                            e destroem a credibilidade do projeto. Nesse sentido, é preciso:</p>
+                                        <ul class="ms-4">
+                                            <li><strong>Objetividade e rigor</strong>: foco em pautas claras, gestão
+                                                rígida do tempo e tomadas de decisão sempre embasadas em dados;</li>
+                                            <li><strong>Tração e disciplina</strong>: registro de compromissos com
+                                                prazos e responsáveis definidos. A disciplina das reuniões reflete a
+                                                cultura operacional que o consultor busca implementar.</li>
+                                        </ul>
+                                        <a data-fancybox="zoom" data-src="Layout/Aula/img/img13.jpg" data-caption="">
+                                            <img src="Layout/Aula/img/img13.jpg" class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>Durante uma consultoria, é comum que o consultor realize diagnósticos, identifique necessidades,
+                        esclareça dúvidas e proponha soluções alinhadas aos objetivos do cliente. Nesse processo, também
+                        podem surgir desafios, como a necessidade de conciliar diferentes expectativas, gerenciar
+                        mudanças e promover o engajamento das equipes envolvidas. E algumas situações que ocorrem no
+                        momento da consultoria impactam diretamente o desenvolvimento das soluções, como mostra a imagem
+                        a seguir.</p>
+
+                    <div class="col-lg-12 mx-auto py-5">
+                        <img src="Layout/Aula/img/img5.jpg" class="mx-auto img-fluid rounded" alt="">
+                    </div>
+
+                    <!-- <div class="col-10 offset-1">
+                        <small>ILUSTRAÇÃO: Como as situações descritas se encaixam no momento da consultoria > já solicitada ao docente</small>
+                        <hr style="border-top: 1px solid #003;">
+                    </div> -->
+
+                    <i>Clique em play no vídeo a seguir e confira um case real de consultoria.</i>
+
+                    <div class="col-8 mx-auto mt-5">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://redirect.sp.senai.br/lk.php?link=21892773562636a96a65abeb1f" title=""
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+        </section>
+
+        <section class="d-flex mt-5 pt-5 flex-column justify-content-center" id="aula2-section-2">
+            <article class="container">
+                <div class="align-self-start ">
+                    <div class="section-level1" style="border: none;">
+                        <h1>Facilitação dos times kaizen e postura no Gemba</h1>
+                    </div>
+                </div>
+                <div class="row g-2">
+                    <p>A facilitação dos times kaizen é, na prática, o coração operacional da melhoria contínua no chão
+                        de fábrica. Diferente do especialista que chega com respostas prontas, o facilitador cria as
+                        condições para que o próprio time descubra e valide as soluções.</p>
+                    <p>Isso exige dominar a dinâmica de grupo: equilibrar as vozes da sala para que o operador mais
+                        tímido também contribua, conter o participante mais dominante sem constrangê-lo, e transformar
+                        divergências em discussões produtivas em vez de conflitos pessoais. O facilitador também precisa
+                        manter o foco no objetivo do evento, traduzindo o problema em metas claras e mensuráveis, e
+                        garantindo que cada decisão seja tomada com base em dados observados no processo — e não em
+                        opiniões ou hierarquia.</p>
+                    <p>Quando bem conduzido, o time kaizen gera engajamento, pertencimento e resultados que se sustentam
+                        após a saída do consultor; quando negligenciado, vira apenas mais uma reunião que consome tempo
+                        sem gerar tração.</p>
+
+                    <section>
+                        <article
+                            class="d-flex py-0 px-0 min-vh-100 flex-column justify-content-center uk-height-large uk-background-cover uk-overflow-hidden uk-light"
+                            style="background-image: url('Layout/Aula/img/img14.jpg'); width: 100vw; margin-left: calc(-50vw + 50%);">
+                            <div class="mascara">
+                                <div class="row">
+                                    <div class="col-8 mx-auto my-auto">
+                                        <p class="texto-mascara mx-auto" style="font-size: 2em;">
+                                            A postura no Gemba, por sua vez, é o que diferencia o profissional que
+                                            apenas recomenda daquele que realmente transforma.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="container">
+                            <div class="row g-2 my-4 text-center">
+                                <h2>No chão de fábrica, o consultor deve observar antes de opinar, dedicando tempo para
+                                    compreender o fluxo real de valor — o que de fato acontece, e não o que está
+                                    descrito no procedimento.</h2>
+                            </div>
+                            <div class="row g-2">
+                                <p>A regra de ouro é fazer perguntas em vez de dar respostas, conduzindo o operador a
+                                    identificar as causas dos problemas com os próprios olhos, em vez de impor um
+                                    diagnóstico vindo de fora. A humildade de quem está disposto a aprender com o chão
+                                    de fábrica, somada à autoridade técnica de quem domina a metodologia, cria a
+                                    combinação ideal: o consultor é percebido como parceiro.</p>
+                                <i>Clique nos itens do quadro a seguir para conferir mais particularidades do momento da
+                                    consultoria.</i>
+
+                                <div class="col-md-8 mx-auto py-5">
+                                    <div class="bd-example-snippet bd-code-snippet">
+                                        <div class="accordion" id="1-accordion">
+                                            <div class="accordion-item">
+                                                <h4 class="accordion-header" id="1-collapse-cabecalho-1">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#1-collapse-1"
+                                                        aria-expanded="false" aria-controls="1-collapse-1"
+                                                        aria-labelledby="Aplicação com profundidade técnica">Sinergia em
+                                                        campo: facilitação e postura no Gemba
+                                                    </button>
+                                                </h4>
+                                                <div id="1-collapse-1" class="accordion-collapse collapse"
+                                                    data-bs-parent="#1-accordion">
+                                                    <div class="accordion-body">
+                                                        <p>Competências inseparáveis na atuação do consultor Lean. A
+                                                            união da postura no Gemba com a facilitação de equipes é o
+                                                            que transforma o conhecimento teórico em resultados
+                                                            práticos, visíveis e duradouros.</p>
+                                                        <a data-fancybox="zoom" data-src="Layout/Aula/img/img15.jpg"
+                                                            data-caption="">
+                                                            <img src="Layout/Aula/img/img15.jpg" class="img-fluid"
+                                                                alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h4 class="accordion-header" id="1-collapse-cabecalho-2"> <button
+                                                        class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#1-collapse-2"
+                                                        aria-expanded="false" aria-controls="1-collapse-2"
+                                                        aria-labelledby="Lorem ipsum dolor">Desafios do setor automotivo
+                                                        e Programa MOVER</button>
+                                                </h4>
+                                                <div id="1-collapse-2" class="accordion-collapse collapse"
+                                                    data-bs-parent="#1-accordion">
+                                                    <div class="accordion-body">
+                                                        <p>As exigências crescentes do setor e as metas do Programa
+                                                            MOVER pressionam montadoras e autopeças por redução de
+                                                            custos, aumento imediato de produtividade e aceleração dos
+                                                            ciclos de melhoria contínua.</p>
+                                                        <a data-fancybox="zoom" data-src="Layout/Aula/img/img10.jpg"
+                                                            data-caption="">
+                                                            <img src="Layout/Aula/img/img16.jpg" class="img-fluid"
+                                                                alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h4 class="accordion-header" id="1-collapse-cabecalho-3">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#1-collapse-3"
+                                                        aria-expanded="false" aria-controls="1-collapse-3"
+                                                        aria-labelledby="Lorem ipsum dolor">O consultor como parceiro
+                                                        estratégico</button>
+                                                </h4>
+                                                <div id="1-collapse-3" class="accordion-collapse collapse"
+                                                    data-bs-parent="#1-accordion">
+                                                    <div class="accordion-body">
+                                                        <p>Ao dominar essas práticas, o consultor vai além de simples
+                                                            entregas pontuais. Ele se consolida como um parceiro
+                                                            indispensável na jornada de sustentabilidade e
+                                                            competitividade das empresas do setor.</p>
+                                                        <a data-fancybox="zoom" data-src="Layout/Aula/img/img11.jpg"
+                                                            data-caption="">
+                                                            <img src="Layout/Aula/img/img17.jpg" class="img-fluid"
+                                                                alt="">
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>Agora, teste seus conhecimentos com a atividade a seguir!</p>
+                            </div>
+
+                            <!-- Ex 2 -->
+                            <div class="row py-3 js-exercise g-2" id="ex-2" data-type="single">
+                                <div class="col-lg-10 mx-auto py-5 border rounded">
+                                    <div class="m-3">
+                                        <p><strong>1.</strong> Para manter os incentivos fiscais e os créditos
+                                            financeiros, a empresa precisa comprovar avanços contínuos em produtividade,
+                                            o que pressiona a cadeia a acelerar a melhoria contínua em prazos cada vez
+                                            mais curtos. <br>
+                                            No primeiro mês de atuação, o consultor conduziu um evento kaizen na linha
+                                            de montagem. Durante a semana, ele percebeu que o operador mais experiente
+                                            dominava as discussões, que dois participantes mais novos não se
+                                            manifestavam e que uma decisão sobre o novo fluxo foi tomada com base apenas
+                                            na opinião do supervisor, sem dados observados no processo. Ao final, o
+                                            consultor registrou os compromissos, mas não verificou se as contramedidas
+                                            foram executadas nos dias seguintes. <br>
+                                            Considerando as boas práticas de atuação em campo do consultor Lean, avalie
+                                            as afirmativas a seguir e selecione a alternativa correta.</p>
+                                        <ul style="list-style: lower-roman;">
+                                            <li>No evento kaizen, o consultor deveria ter atuado como facilitador,
+                                                equilibrando as vozes da sala para garantir a contribuição de todos os
+                                                participantes e transformando divergências em discussões produtivas, em
+                                                vez de permitir que a hierarquia ou a opinião dominasse a decisão.</li>
+                                            <li>A decisão sobre o novo fluxo deveria ter sido tomada com base em dados
+                                                observados no processo (Gemba), e não em opiniões ou hierarquia, cabendo
+                                                ao consultor conduzir o time a identificar as causas dos problemas com
+                                                os próprios olhos.</li>
+                                            <li>A postura correta do consultor durante o evento kaizen é encerrar sua
+                                                participação, pois o time é responsável pela execução das contramedidas,
+                                                cabendo ao consultor apenas o acompanhamento em reuniões de
+                                                acompanhamento agendadas.</li>
+                                            <li>O rapport estabelecido com a liderança e o chão de fábrica é dispensável
+                                                nesse contexto, uma vez que a urgência imposta pelo Programa MOVER
+                                                justifica a imposição de diagnósticos e soluções prontas pelo consultor.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="list-group m-3 gap-2">
+                                        <label
+                                            class="list-group-item border rounded-3 py-3 d-flex gap-3 align-items-center cursor-pointer"><input
+                                                class="form-check-input flex-shrink-0 js-option" type="radio" name="q1"
+                                                value="a"><span class="opt-label">Apenas as afirmativas I e II estão
+                                                corretas.</span></label>
+                                        <label
+                                            class="list-group-item border rounded-3 py-3 d-flex gap-3 align-items-center cursor-pointer"><input
+                                                class="form-check-input flex-shrink-0 js-option" type="radio" name="q1"
+                                                value="b"><span class="opt-label">Apenas as afirmativas I e III estão
+                                                corretas.</span></label>
+                                        <label
+                                            class="list-group-item border rounded-3 py-3 d-flex gap-3 align-items-center cursor-pointer"><input
+                                                class="form-check-input flex-shrink-0 js-option" type="radio" name="q1"
+                                                value="c"><span class="opt-label">Apenas as afirmativas II e IV estão
+                                                corretas.</span></label>
+                                        <label
+                                            class="list-group-item border rounded-3 py-3 d-flex gap-3 align-items-center cursor-pointer"><input
+                                                class="form-check-input flex-shrink-0 js-option" type="radio" name="q1"
+                                                value="d"><span class="opt-label">Apenas as afirmativas I, II e III
+                                                estão corretas.</span></label>
+                                        <label
+                                            class="list-group-item border rounded-3 py-3 d-flex gap-3 align-items-center cursor-pointer"><input
+                                                class="form-check-input flex-shrink-0 js-option" type="radio" name="q1"
+                                                value="e"><span class="opt-label">Todas as afirmativas estão
+                                                corretas.</span></label>
+                                    </div>
+                                    <div class="feedback-container">
+                                        <div class="collapse feedback-correto mx-4">
+                                            <div class="alert alert-success d-flex align-items-center"><i
+                                                    class="bi bi-check-circle-fill me-2 fs-4"></i>
+                                                <!-- Exemplo: Texto personalizado de sucesso -->
+                                                <div class="msg-content">Afirmativa I : correta. A facilitação é o
+                                                    coração do time kaizen: cabe ao facilitador equilibrar as vozes,
+                                                    conter o participante dominante sem constrangê-lo, incentivar os
+                                                    mais tímidos e transformar divergências em discussões produtivas,
+                                                    mantendo o foco no objetivo do evento. <br>
+
+                                                    Afirmativa II: correta. A postura no Gemba exige observar antes de
+                                                    opinar e decidir com base em dados do processo real, fazendo
+                                                    perguntas em vez de impor respostas. A decisão tomada apenas pela
+                                                    opinião do supervisor contraria essa prática. <br>
+
+                                                    Afirmativa III: incorreta. O consultor não encerra a participação
+                                                    durante o evento: ele deve acompanhar a execução das contramedidas,
+                                                    garantindo que os compromissos registrados sejam cumpridos e que os
+                                                    resultados se sustentem após sua saída. <br>
+
+                                                    Afirmativa IV: incorreta. O rapport é o primeiro pilar da atuação em
+                                                    campo e nunca é dispensável — mesmo sob pressão regulatória, é ele
+                                                    que transforma resistência em colaboração e constrói a credibilidade
+                                                    da consultoria.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="collapse feedback-tentativa  mx-4">
+                                            <div class="alert alert-warning d-flex align-items-center"><i
+                                                    class="bi bi-exclamation-circle-fill me-2 fs-4"></i>
+                                                <div class="msg-content">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="collapse feedback-erro  mx-4">
+                                            <div class="alert alert-danger d-flex align-items-center"><i
+                                                    class="bi bi-x-circle-fill me-2 fs-4"></i>
+                                                <!-- Exemplo: Texto personalizado de erro -->
+
+                                                <div class="msg-texto"> Afirmativa I : correta. A facilitação é o
+                                                    coração do time kaizen: cabe ao facilitador equilibrar as vozes,
+                                                    conter o participante dominante sem constrangê-lo, incentivar os
+                                                    mais tímidos e transformar divergências em discussões produtivas,
+                                                    mantendo o foco no objetivo do evento. <br>
+
+                                                    Afirmativa II: correta. A postura no Gemba exige observar antes de
+                                                    opinar e decidir com base em dados do processo real, fazendo
+                                                    perguntas em vez de impor respostas. A decisão tomada apenas pela
+                                                    opinião do supervisor contraria essa prática. <br>
+
+                                                    Afirmativa III: incorreta. O consultor não encerra a participação
+                                                    durante o evento: ele deve acompanhar a execução das contramedidas,
+                                                    garantindo que os compromissos registrados sejam cumpridos e que os
+                                                    resultados se sustentem após sua saída. <br>
+
+                                                    Afirmativa IV: incorreta. O rapport é o primeiro pilar da atuação em
+                                                    campo e nunca é dispensável — mesmo sob pressão regulatória, é ele
+                                                    que transforma resistência em colaboração e constrói a credibilidade
+                                                    da consultoria.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row g-2">
+                                <i>Confira no vídeo a seguir um resumo do que estudamos neste módulo!</i>
+                            </div>
+                            <div class="col-8 mx-auto my-5">
+                                <div class="ratio ratio-16x9 my-3">
+                                    <iframe src="https://redirect.sp.senai.br/lk.php?link=21892773562636a96a65abeb1f"
+                                        title="" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="col-10 my-5 py-5 offset-1">
+                                <small>Resumo do que foi estudado no módulo apresentando as habilidades para se tornar
+                                    um consultor ideal</small>
+                                <hr style="border-top: 1px solid #003;">
+                            </div>
+                        </article>
+                    </section>
+            </article>
+        </section>
+    </main>
+    <footer class="fixed-bottom bg-menu-color">
+        <div class="progress_section">
+            <div class="progress_bar_wrap">
+                <div class="progress_bar"></div>
+            </div>
+            <div class="progress_num">
+            </div>
+        </div>
+        <!--Desktop-->
+        <div class="d-flex justify-content-evenly align-items-center justify-content-center d-none d-lg-block">
+            <div class="col-sm-12 d-flex justify-content-center">
+                <div class="d-flex justify-content-center align-items-center w-100">
+                    <!-- Coluna para "Anterior" (link oculto) -->
+                    <div class="d-flex justify-content-start align-items-center px-2 pt-2" style="margin-top: 3px">
+
+                        <a href="index.html" class="d-flex align-items-center">
+                            <i class="bx  bxs-left-arrow-circle bx-md copyright px-3"></i>
+                            <span class="text-white"><strong>ANTERIOR</strong></span>
+
+                        </a>
+                    </div>
+
+
+                    <!-- Coluna para "© SENAI" -->
+                    <div class="d-flex justify-content-center align-items-center px-2">
+                        <p class="mx-auto mt-4 pt-2 copyright">© SENAI</p>
+                    </div>
+
+                    <!-- Coluna para "Aula 1" -->
+                    <div class="d-flex justify-content-start align-items-center px-2 pt-2"
+                        style="margin-top: 3px; visibility: hidden;">
+                        <a href="aula1.html" class="d-flex align-items-center" ;>
+                            <span class="text-white"><strong>PRÓXIMO</strong></span>
+                            <i class="bx  bxs-right-arrow-circle bx-md copyright px-3"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Mobile-->
+        <div class="d-flex justify-content-evenly  align-items-center  justify-content-center d-lg-none">
+            <div class="col-sm-12 d-flex  justify-content-center">
+                <div class="d-flex justify-content-evenly align-items-center">
+                    <div class="col-sm-2 d-flex justify-content-end">
+                        <a href="index.html"> <i class="bx mt-3  bxs-left-arrow-circle bx-md copyright px-3"></i>
+                        </a>
+                    </div>
+                    <div class="col-sm-8 d-flex justify-content-center ">
+                        <p class="mx-auto mt-4 copyright">© SENAI</p>
+                    </div>
+                    <div class="col-sm-2 d-flex justify-content-start">
+                        <a href="aula1.html" style="visibility: hidden;"> <i
+                                class="bx mt-3  bxs-right-arrow-circle bx-md copyright px-3"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <div class="modal fade" id="resumeFromLastModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Aviso</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Parece que você já iniciou o curso, você pode:</p>
+                </div>
+                <div class="modal-footer">
+                    <div class="d-grid gap-2 mx-auto d-md-flex justify-content-md-end">
+                        <button type="button" class="btn btn-primary" id="resumeFromLastButton">
+                            Continuar de onde parou
+                        </button>
+                        <button type="button" class="btn btn-primary" id="resumeFromBeginning">
+                            Iniciar novamente
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="Layout/Template/bibliotecas/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+<!-- <script src="Layout/Template/js/chart-plugin.js"></script> -->
+<!-- <script src="Layout/Template/bibliotecas/bootstrap/js/popper.min.js"></script> -->
+<script src="Layout/Template/js/main.js"></script>
+<script src="Layout/Template/bibliotecas/youtube/js/youtube-chapters.min.js"></script>
+<script src="Layout/Template/js/exercicios.js"></script>
+<script src="Layout/Aula/js/youtube.js"></script>
+<script src="Layout/Aula/js/videos.js"></script>
+<script src="Layout/Aula/js/graficos.js"></script>
+<script src="menu.js"></script>
+<script src="Layout/Template/bibliotecas/fancybox/fancybox.umd.js"></script>
+<script src="Layout/Template/bibliotecas/webtour/intro.min.js"></script>
+<script src="./creditos.js"></script>
+<script>
+    var intro = introJs();
+    intro.setOptions({
+        'skipLabel': '<span uk-icon="icon: close; ratio: 1"></span>',
+        tooltipClass: 'customTooltip',
+        showProgress: true,
+        dontShowAgain: true,
+        hidePrev: true,
+        hideNext: false,
+        exitOnEsc: true,
+        showStepNumbers: false,
+        showBullets: true,
+        steps: [
+            {
+                element: document.querySelector('.switch-darkmode'),
+                intro: '<p>Modo  Escuro</p>'
+            },
+            {
+                element: document.querySelector('.vlibras-show'),
+                intro: '<p>Aqui você pode encontar o V-Libras'
+            },
+            // {
+            //     element: document.querySelector('#Acessibilidade'),
+            //     intro: '<img src="Layout/Template/img/acessibilidade.png">',
+            // },
+            {
+                element: document.querySelector('#Acessibilidade'),
+                intro: '<p>Aqui você encontra opções de aumentar ou diminuir o tamanho da fonte e ativar ou desativar os modos de visualização monocromático ou para pessoas com daltonismo.</p>',
+            },
+        ]
+    }).start();
+</script>
+<script>
+    Fancybox.bind('[data-fancybox="zoom"]', {
+    });
+</script>
+
+</html>
