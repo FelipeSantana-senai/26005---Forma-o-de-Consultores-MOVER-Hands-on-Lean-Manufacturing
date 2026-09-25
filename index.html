@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html id="master" lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="Layout/Template/img/favicon.ico" />
+    <title>Senai</title>
+    <!-- Config -->
+    <script src="Layout/Template/js/main.js" defer></script>
+    <link rel="stylesheet" href="Layout/Template/css/theme.css">
+    <link rel="stylesheet" href="Layout/Template/css/style.css">
+    <link rel="stylesheet" href="Layout/Aula/css/add-style.css">
+    <!-- Lottie -->
+    <script src="Layout/Template/bibliotecas/lottie/lottie.js"></script>
+    <script src="Layout/Template/bibliotecas/lottie/lottie-interactivity.min.js"></script>
+    <!-- JQuery-->
+    <script type="text/javascript" src="Layout/Template/bibliotecas/jQuery-3.6.3/jquery-3.6.3.min.js"></script>
+    <!-- Bootstrap -->
+    <link href="Layout/Template/bibliotecas/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="Layout/Template/bibliotecas/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <!-- UiKit-->
+    <link href="Layout/Template/bibliotecas/uikit/css/uikit.min.css" rel="stylesheet" />
+    <script src="Layout/Template/bibliotecas/uikit/js/uikit.min.js" async></script>
+    <script src="Layout/Template/bibliotecas/uikit/js/uikit-icons.min.js" async></script>
+    <!-- BoxIcons -->
+    <link href="Layout/Template/bibliotecas/boxicons/css/boxicons.min.css" rel='stylesheet'>
+    <script src="Layout/Template/bibliotecas/boxicons/boxicons.js" defer></script>
+    <!-- H5p-player -->
+    <script type="text/javascript" src="Layout/Template/bibliotecas/h5p-player/dist/main.bundle.js"></script>
+    <!-- GOOGLE TRANSLATE -->
+    <script src="Layout/Template/js/google.js" type="text/javascript" defer></script>
+    <!-- SCORM -->
+    <script src="Layout/Template/scorm/APIWrapper.js" defer></script>
+    <script src="Layout/Template/scorm/SCOFunctions.js" defer></script>
+    <!-- BoxIcons -->
+    <script src="Layout/Template/bibliotecas/boxicons/boxicons.js"></script>
+    <link href="Layout/Template/bibliotecas/boxicons/css/boxicons.min.css" rel='stylesheet'>
+    <!-- Prism  -->
+    <script src="Layout/Template/bibliotecas/prism/js/prism.js"></script>
+    <link href="Layout/Template/bibliotecas/prism/css/prism.css" rel='stylesheet'>
+    <!-- VIDEO DO YOUTUBE -->
+    <link href="Layout/Template/bibliotecas/youtube/css/youtube-chapters.min.css" rel="stylesheet" />
+    <!-- Grafico -->
+    <script src="Layout/Template/bibliotecas/charts/chart.js"></script>
+    <!-- Fancybox -->
+    <link rel="stylesheet" href="Layout/Template/bibliotecas/fancybox/fancybox.css">
+    <!-- webtour -->
+    <link rel="stylesheet" href="Layout/Template/bibliotecas/webtour/introjs.min.css">
+
+    <!-- IntroJS custom overrides -->
+    <style>
+        .customTooltip.introjs-tooltip {
+            max-width: min(380px, calc(100vw - 40px));
+            min-width: 280px;
+        }
+
+        .customTooltip .introjs-tooltip-header {
+            padding: 6px 20px 0;
+            min-height: 0;
+        }
+
+        .customTooltip .introjs-tooltip-title {
+            display: none;
+        }
+
+        .customTooltip .introjs-tooltiptext {
+            padding: 8px 20px 0;
+        }
+
+        .customTooltip .introjs-tooltiptext p {
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        .customTooltip .introjs-dontShowAgain {
+            display: flex;
+            align-items: center;
+            padding: 6px 20px 8px;
+        }
+
+        .customTooltip .introjs-dontShowAgain input[type="checkbox"] {
+            width: auto !important;
+            height: auto !important;
+            margin: 0 6px 0 0;
+            flex-shrink: 0;
+            display: inline !important;
+        }
+
+        .customTooltip .introjs-dontShowAgain label {
+            font-size: 13px !important;
+            margin: 0;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .customTooltip .introjs-tooltipbuttons {
+            padding: 6px 10px;
+        }
+
+        @media (max-width: 480px) {
+            .customTooltip.introjs-tooltip {
+                max-width: calc(100vw - 30px);
+            }
+
+            .customTooltip .introjs-dontShowAgain label {
+                white-space: normal;
+                font-size: 12px !important;
+            }
+        }
+    </style>
+</head>
+
+<body class="font">
+    <header>
+        <div id="google_translate_element"></div>
+        <!-- Vlibras -->
+        <div vw class="enabled">
+            <div id="vlibras-show" vw-access-button class="#"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+        <!-- Menu -->
+        <nav class="navbar-dark bg-menu-color fixed-top nav-height">
+            <div class="d-flex bd-highlight align-items-center g-2 nav-height">
+                <div class="bd-highlight">
+                    <button class="btn  align-items-center ms-2" data-bs-toggle="offcanvas"
+                        data-bs-target="#nav-menu-open-close" aria-controls="nav-menu-open-close"> <i
+                            class='cor1 bx  bx-menu bx-tada-hover'></i> </button>
+                </div>
+                <div class="bd-highlight mx-auto">
+                    <img src="Layout/Template/img/logo_senai-dn.svg" class="d-none d-lg-block img-fluid"
+                        alt="Senai Logo" style="margin-left:150px; max-width:160px;">
+                    <img src="Layout/Template/img/logo_senai-dn.svg" class="d-md-block d-lg-none" alt="Senai Logo"
+                        style="margin-top: 5px;max-width: 120px; ">
+                </div>
+                <div class="bd-highlight">
+                    <div class="d-flex bd-highlight align-items-center nav-height">
+                        <div class="form-check form-check-inline switch-group">
+                            <input class="form-check-input d-none" type="checkbox" name="themeBtns" id="themeSwitcher"
+                                aria-label="botão de mudança de tema" title="botão de mudança de tema">
+                            <label class="form-check-label" for="themeSwitcher">
+                                <div class="switch-darkmode">
+                                    <div class="icons">
+                                        <i class='bx bx-moon bx-tada-hover' title="tema escuro"></i>
+                                        <i class='bx bx-sun bx-spin-hover' title="tema claro"></i>
+                                    </div>
+                                    <div class="circle"></div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class=" d-flex flex-row align-middle ">
+                            <button class="btn" type="button" id="vlibrasToggle" title="visualizar vlibras"
+                                aria-pressed="true" aria-label="visualizar vlibras" onclick="vlibrashow()">
+                                <i class='vlibras-show bx bx-universal-access' style="margin-bottom: 0px;"
+                                    aria-label="visualizar vlibras"></i>
+                            </button>
+                        </div>
+                        <div class="dropdown me-2">
+                            <button class="btn text-white me-2" type="button" id="Acessibilidade"
+                                data-bs-toggle="dropdown" aria-expanded="falso" aria-label="Configuração"
+                                title="Configuração">
+                                <i class='bx bx-cog bx-spin-hover bx-sm'></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark menu-margin" aria-labelledby="Acessibilidade">
+                                <li class="dropdown-item">
+                                    <strong>Acessibilidade</strong>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a class="dropdown-item">
+                                        <div class="mb-3 form-check form-switch">
+                                            <input class="form-check-input " type="checkbox" name="themeBtns"
+                                                id="graySwitcher">
+                                            <label class="form-check-label menu" for="graySwitcher"
+                                                aria-label="visualização monocromático"
+                                                title="visualização monocromático">Modo
+                                                Monocromatico</label>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item">
+                                        <div class="mb-3 form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" name="themeBtns"
+                                                id="daltonicSwitcher">
+                                            <label class="form-check-label menu" for="daltonicSwitcher"
+                                                aria-label="visualização daltônico" title="visualização daltônico">Modo
+                                                Daltônico</label>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li class="dropdown-item">
+                                    <span class="menu">Tamanho da Fonte</span>
+                                    <br>
+                                    <input type="range" class="form-range" min="50" max="115" step="5" id="size"
+                                        aria-label="seletor de tamanho da fonte" title="seletor de tamanho da fonte">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="offcanvas offcanvas-start" data-bs-backdrop="true" data-bs-backdrop="static" tabindex="-1"
+                id="nav-menu-open-close" aria-labelledby="staticBackdropLabel">
+                <div class="offcanvas-header bg-menu-color">
+                    <p class="offcanvas-title white-text text-white" id="staticBackdropLabel">Menu</p> <button
+                        type="button" class="btn-close btn-close-white white-text text-white"
+                        data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body ">
+                    <!-- Menu -->
+                    <nav id="navbar-menu" class="flex-column align-items-stretch pe-4 my-5">
+                        <nav class="nav nav-pills flex-column" id="menu-container"></nav>
+                    </nav>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="uk-overflow-hidden" data-bs-spy="scroll" data-bs-offset="0">
+        <!-- Capa -->
+        <section>
+            <article
+                class="d-flex py-4 min-vh-100 flex-column justify-content-center uk-height-large uk-background-cover uk-overflow-hidden uk-light"
+                style="background-image: url('Layout/Aula/img/img1.jpg'); width: 100vw; margin-left: calc(-50vw + 50%);">
+                <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
+                    <div class="card mx-auto">
+                        <div class="row m-2 g-2">
+                            <h1 class="pt-3">Fundamentos de Lean Manufacturing</h1>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <div class="row g-2">
+                <div class="row position-absolute g-2" style="left: 0; right: 0; bottom: 4%; justify-content: center;">
+                    <div class="col-auto py-2 text-center">
+                        <div class="mouse"></div>
+                        <p class="uk-text-center mb-0">
+                            <span class="py-1 text-white px-3 rounded"
+                                style="background-color:rgba(0, 0, 0, 0.3)!important; border:0!important">Role para
+                                baixo</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- APRESENTACAO -->
+        <section class="d-flex my-5 py-5 flex-column justify-content-center">
+            <article class="container">
+                <div class="row g-2">
+                    <p>A compreensão profunda do <em>Lean Manufacturing</em> exige que o consultor revisite as origens
+                        do <em>Toyota Production System</em> (TPS), desenvolvido no contexto de escassez do Japão
+                        pós-Segunda Guerra Mundial por figuras centrais como Taiichi Ohno e Shigeo Shingo.</p>
+                </div>
+
+            </article>
+        </section>
+        <section class="my-3">
+            <article
+                class="d-flex py-0 px-0 min-vh-100 flex-column justify-content-center uk-height-large uk-background-cover uk-overflow-hidden uk-light"
+                style="background-image: url('Layout/Aula/img/img2.jpg'); width: 100vw; margin-left: calc(-50vw + 50%);">
+                <div class="mascara">
+                    <div class="row">
+                        <div class="col-8 mx-auto my-auto">
+                            <p class="texto-mascara mx-auto" style="font-size: 2em;">
+                                Diferentemente da produção em massa fordista, o TPS foi concebido como um sistema de
+                                produção de pequenos lotes com alta variedade, fundamentado na eliminação absoluta de
+                                desperdícios.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="container">
+                <div class="row g-2 my-4">
+                    <p>O conceito de desperdício é fundamental para compreender a eficiência em processos produtivos.
+                        Ele pode ser classificado em diversas categorias, como tempo, recursos e energia, cada uma
+                        impactando diretamente na produtividade e nos custos. Além disso, o modelo 3M, que inclui
+                        <strong>Muda</strong> (desperdício), <strong>Mura</strong> (irregularidade) e
+                        <strong>Muri</strong> (sobrecarga), oferece uma estrutura para identificar e mitigar problemas
+                        nos sistemas de trabalho. Compreender e aplicar esses conceitos é essencial para otimizar
+                        operações e alcançar melhores resultados.
+                    </p>
+                    <p>O pensamento enxuto, conforme sistematizado por Womack e Jones em A Máquina que Mudou o Mundo,
+                        baseia-se em cinco princípios fundamentais: a <strong>especificação do valor sob a ótica do
+                            cliente</strong>, a <strong>identificação do fluxo de valor</strong>, a <strong>criação de
+                            fluxo contínuo</strong>, o <strong>estabelecimento da produção puxada</strong> e a
+                        <strong>busca incessante pela perfeição</strong>.
+                    </p>
+                    <p>Para o consultor avançado, a representação da "Casa do TPS" serve como o mapa estrutural para
+                        qualquer diagnóstico. O telhado simboliza as metas finais: qualidade superior, menor custo,
+                        menor lead time, segurança e moral elevada. Os dois pilares de sustentação são o Just-in-Time
+                        (JIT), que preconiza a entrega do item certo, na quantidade certa e no momento exato, e o
+                        Jidoka, ou autonomação, que confere às máquinas e operadores a inteligência para detectar
+                        anomalias e interromper o processo imediatamente para evitar a propagação de defeitos.</p>
+                    <p>Contudo, a eficácia desses pilares depende inteiramente das fundações: a estabilidade básica dos
+                        processos, o Heijunka (nivelamento da produção), o trabalho padronizado e a prática contínua do
+                        Kaizen.</p>
+                </div>
+
+                <div class="row d-flex align-items-center g-2">
+                    <div class="col-lg-4">
+                        <div class="caixa-ia">
+                            <a data-fancybox="zoom" data-src="Layout/Aula/img/img3.jpg" data-caption="">
+                                <img src="Layout/Aula/img/img3.jpg" alt="imagem ilustrativa" class="img-fluid rounded">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 d-flex flex-column justify-content-center pt-3 ps-5">
+                        <p>É imperativo que o consultor perceba o Lean não como um conjunto isolado de ferramentas, como
+                            Kanban ou 5S, mas como um sistema sociotécnico integrado.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row g-2 mt-4">
+                    <p>Isso significa que a dimensão técnica (fluxos, máquinas, tempos) é indissociável da dimensão
+                        humana (cultura, liderança, resolução de problemas). A falha de muitas implementações,
+                        especialmente no setor automotivo, ocorre quando se tenta a aplicação das ferramentas sem
+                        preparar a base de estabilidade e sem engajar o capital intelectual da organização.</p>
+                </div>
+
+                <div class="col-lg-12 mx-auto pt-5">
+                    <a data-fancybox="zoom" data-src="Layout/Aula/img/img4.jpg" data-caption="">
+                        <img src="Layout/Aula/img/img4.jpg" class="img-fluid" alt="">
+                    </a>
+                </div>
+            </article>
+        </section>
+        <section class="d-flex mt-5 pt-5 flex-column justify-content-center" id="aula1-section-1">
+            <article class="container">
+                <div class="align-self-start ">
+                    <div class="section-level1" style="border: none;">
+                        <h1>Os vilões da produtividade: MUDA, MURI e MURA</h1>
+                    </div>
+                </div>
+                <div class="row g-2">
+                    <p>No universo da Gestão Lean, melhorar a produtividade não significa simplesmente trabalhar mais
+                        rápido ou aumentar a quantidade produzida. O verdadeiro desafio está em construir processos
+                        capazes de gerar valor de forma contínua, equilibrada e sustentável. Para isso, é fundamental
+                        compreender três grandes inimigos do desempenho organizacional: Muda, Muri e Mura. Originados no
+                        Sistema Toyota de Produção, esses conceitos ajudam a identificar as causas que comprometem a
+                        eficiência, a qualidade e a estabilidade dos processos seja em áreas fabris quanto escritórios.
+                    </p>
+
+                    <i>Clique nos cards a seguir para mais detalhes de cada desperdício.</i>
+                </div>
+                <div class="row py-4 justify-content-center g-2">
+
+                    <div class="col-lg-3 py-3">
+                        <div class="uk-card">
+                            <div class="uk-card-media-top">
+                                <div class="text-center">
+                                    <div class="card-container" id="cardContainer">
+                                        <div class="card-flip uk-card-default" id="card">
+                                            <div class="card-front">
+                                                <h2>Muda <br> (desperdício)</h2>
+                                            </div>
+                                            <div class="card-back px-2">
+                                                <p>O Muda refere-se a qualquer atividade que consome recursos, mas não
+                                                    agrega nenhum
+                                                    valor real ao produto ou cliente final. Ele é tradicionalmente
+                                                    dividido em sete
+                                                    grandes desperdícios: superprodução, tempo de espera, transporte
+                                                    desnecessário,
+                                                    excesso de processamento, inventário parado, movimentos
+                                                    desnecessários e
+                                                    defeitos. Eliminar o Muda significa limpar o excesso.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 py-3">
+                        <div class="uk-card">
+                            <div class="uk-card-media-top">
+                                <div class="text-center">
+                                    <div class="card-container" id="cardContainer">
+                                        <div class="card-flip uk-card-default" id="card">
+                                            <div class="card-front">
+                                                <h2>Muri <br> (sobrecarga)</h2>
+                                            </div>
+                                            <div class="card-back px-2">
+                                                <p>O Muri acontece quando se exige de uma máquina ou de um colaborador
+                                                    um esforço
+                                                    além de sua capacidade natural. Essa sobrecarga gera estresse
+                                                    físico, mental e
+                                                    desgaste de equipamentos. A longo prazo, o Muri resulta em quebras
+                                                    de
+                                                    maquinário, acidentes de trabalho, erros operacionais e esgotamento
+                                                    profissional
+                                                    (burnout).</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 pt-3">
+                        <div class="uk-card">
+                            <div class="uk-card-media-top">
+                                <div class="text-center">
+                                    <div class="card-container" id="cardContainer">
+                                        <div class="card-flip uk-card-default" id="card">
+                                            <div class="card-front">
+                                                <h2>Mura <br> (irregularidade)</h2>
+                                            </div>
+                                            <div class="card-back px-2">
+                                                <p>O Mura representa a inconsistência ou a falta de uniformidade no
+                                                    fluxo
+                                                    de
+                                                    trabalho. É o cenário onde a equipe enfrenta momentos de ócio
+                                                    extremo
+                                                    seguidos
+                                                    por picos caóticos de correria. Essa oscilação desequilibra a
+                                                    operação e
+                                                    é,
+                                                    frequentemente, a causa raiz que gera o Muri (sobrecarga para
+                                                    compensar
+                                                    o
+                                                    atraso) e o Muda (espera ou acúmulo de estoque).</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-2">
+                    <p>É importante perceber que Muda, Muri e Mura não são problemas isolados. Eles estão diretamente
+                        relacionados. A variabilidade (Mura) pode provocar sobrecarga (Muri), que, por sua vez, pode
+                        gerar erros, retrabalhos e outros desperdícios (Muda). Portanto, uma organização Lean não deve
+                        concentrar seus esforços apenas na redução de desperdícios. É necessário também equilibrar a
+                        carga de trabalho e estabilizar os processos. Combater simultaneamente esses três vilões
+                        significa criar operações mais previsíveis, eficientes, seguras e capazes de entregar maior
+                        valor ao cliente.</p>
+                </div>
+                <div class="col-lg-12 mx-auto py-5">
+                    <img src="Layout/Aula/img/img6.jpg" class="mx-auto img-fluid rounded" alt="">
+                </div>
+                <div class="row g-2">
+                    <p>Para consolidar seu aprendizado, faça a atividade a seguir, que foi elaborada para reforçar os
+                        tópicos apresentados.</p>
+                </div>
+                <!-- Ex 2 -->
+                <div class="row py-3 js-exercise g-2" id="ex-2" data-type="single">
+                    <div class="col-lg-10 mx-auto py-5 border rounded">
+                        <div class="m-3">
+                            <p><strong>1.</strong> Uma empresa do setor automotivo decidiu implementar o Lean
+                                Manufacturing com o objetivo de reduzir custos, melhorar a qualidade e diminuir o lead
+                                time. Para isso, a direção determinou a implantação imediata de ferramentas como 5S e
+                                Kanban. Entretanto, o diagnóstico realizado pelo consultor identificou instabilidade nos
+                                processos, ausência de trabalho padronizado, produção desnivelada e baixo envolvimento
+                                dos operadores na resolução de problemas.</p>
+                            <p>Considerando os fundamentos do Toyota Production System (TPS) e os princípios do
+                                pensamento enxuto apresentados no texto, assinale a alternativa que apresenta a
+                                recomendação mais adequada do consultor:</p>
+                        </div>
+                        <div class="list-group m-3 gap-2">
+                            <label
+                                class="list-group-item border rounded-3 py-3 d-flex gap-3 align-items-center cursor-pointer"><input
+                                    class="form-check-input flex-shrink-0 js-option" type="radio" name="q1" value="a">
+                                <span class="opt-label">Priorizar a implantação do Kanban, pois a produção puxada é
+                                    suficiente para garantir a estabilidade do sistema e eliminar os principais
+                                    desperdícios.</span></label>
+                            <label
+                                class="list-group-item border rounded-3 py-3 d-flex gap-3 align-items-center cursor-pointer"><input
+                                    class="form-check-input flex-shrink-0 js-option" type="radio" name="q1" value="b">
+                                <span class="opt-label">Concentrar os esforços na automação dos equipamentos, uma vez
+                                    que o Jidoka depende prioritariamente da tecnologia para detectar e corrigir
+                                    anomalias.</span></label>
+                            <label
+                                class="list-group-item border rounded-3 py-3 d-flex gap-3 align-items-center cursor-pointer"><input
+                                    class="form-check-input flex-shrink-0 js-option" type="radio" name="q1" value="c">
+                                <span class="opt-label">Estruturar inicialmente as condições básicas do sistema,
+                                    fortalecendo a estabilidade dos processos, o nivelamento da produção, o trabalho
+                                    padronizado e o Kaizen, simultaneamente ao desenvolvimento da cultura e do
+                                    envolvimento das pessoas.</span></label>
+                            <label
+                                class="list-group-item border rounded-3 py-3 d-flex gap-3 align-items-center cursor-pointer"><input
+                                    class="form-check-input flex-shrink-0 js-option" type="radio" name="q1" value="d">
+                                <span class="opt-label">Adotar exclusivamente o Just-in-Time, reduzindo estoques ao
+                                    mínimo possível, mesmo que os processos ainda apresentem elevada variabilidade e
+                                    instabilidade.</span></label>
+                            <label
+                                class="list-group-item border rounded-3 py-3 d-flex gap-3 align-items-center cursor-pointer"><input
+                                    class="form-check-input flex-shrink-0 js-option" type="radio" name="q1" value="e">
+                                <span class="opt-label">Implantar as ferramentas Lean de maneira independente em cada
+                                    setor, permitindo que cada área escolha aquelas que melhor atendam às suas
+                                    necessidades operacionais.</span></label>
+                        </div>
+                        <div class="feedback-container">
+                            <div class="collapse feedback-correto mx-4">
+                                <div class="alert alert-success d-flex align-items-center"><i
+                                        class="bi bi-check-circle-fill me-2 fs-4"></i>
+                                    <!-- Exemplo: Texto personalizado de sucesso -->
+                                    <div class="msg-content">O Lean Manufacturing deve ser compreendido como um sistema
+                                        integrado, e não como um conjunto isolado de ferramentas. A “Casa do TPS”
+                                        demonstra que JIT e Jidoka dependem de fundações sólidas, como estabilidade dos
+                                        processos, Heijunka, trabalho padronizado e Kaizen. Além disso, a dimensão
+                                        técnica deve estar associada à dimensão humana, envolvendo liderança, cultura e
+                                        participação dos trabalhadores na solução de problemas.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapse feedback-tentativa  mx-4">
+                                <div class="alert alert-warning d-flex align-items-center"><i
+                                        class="bi bi-exclamation-circle-fill me-2 fs-4"></i>
+                                    <div class="msg-content">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapse feedback-erro  mx-4">
+                                <div class="alert alert-danger d-flex align-items-center"><i
+                                        class="bi bi-x-circle-fill me-2 fs-4"></i>
+                                    <!-- Exemplo: Texto personalizado de erro -->
+
+                                    <div class="msg-texto">O Lean Manufacturing deve ser compreendido como um sistema
+                                        integrado, e não como um conjunto isolado de ferramentas. A “Casa do TPS”
+                                        demonstra que JIT e Jidoka dependem de fundações sólidas, como estabilidade dos
+                                        processos, Heijunka, trabalho padronizado e Kaizen. Além disso, a dimensão
+                                        técnica deve estar associada à dimensão humana, envolvendo liderança, cultura e
+                                        participação dos trabalhadores na solução de problemas.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="d-flex mt-5 pt-5 flex-column justify-content-center" id="aula1-section-2">
+            <article class="container">
+                <div class="align-self-start ">
+                    <div class="section-level1" style="border: none;">
+                        <h1>Desperdícios do Lean</h1>
+                    </div>
+                </div>
+                <div class="row g-2">
+                    <p>O conceito de Muda, ou desperdício, é o pilar central da prática Lean e representa qualquer
+                        atividade humana que absorva recursos, mas não crie valor. Taiichi Ohno identificou
+                        originalmente sete desperdícios clássicos: superprodução, espera, transporte, processamento
+                        excessivo, estoque, movimentação e defeitos. Posteriormente, a literatura e a prática de
+                        consultoria consolidaram o oitavo desperdício: o talento não utilizado, que se refere à
+                        subutilização do capital intelectual e da criatividade dos colaboradores. Para o consultor
+                        avançado, o Muda não é apenas uma lista de problemas a serem resolvidos, mas o foco central de
+                        uma estratégia de sobrevivência econômica.</p>
+                </div>
+                <div class="row d-flex align-items-center g-2">
+                    <div class="col-lg-4">
+                        <div class="caixa-ia">
+                            <a data-fancybox="zoom" data-src="Layout/Aula/img/img7.jpg" data-caption="">
+                                <img src="Layout/Aula/img/img7.jpg" alt="imagem ilustrativa" class="img-fluid rounded">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 d-flex flex-column justify-content-center pt-3 ps-5">
+                        <p><strong>Superprodução</strong></p>
+                        <p>A superprodução é classificada como o desperdício mais grave, pois ela é a causa raiz de
+                            quase todos os outros tipos de Muda. Ela ocorre quando se produz mais do que o necessário,
+                            antes do momento necessário ou em uma velocidade superior ao Takt Time. No setor automotivo,
+                            a superprodução é frequentemente impulsionada pela mentalidade de "lotes e filas", onde a
+                            busca por uma falsa eficiência de máquina leva à produção antecipada para "garantir o
+                            estoque". No entanto, essa prática gera um acúmulo massivo de Work-in-Process (WIP), consome
+                            capital de giro, exige espaço físico adicional, aumenta o risco de obsolescência e,
+                            crucialmente, esconde problemas de qualidade que só serão detectados semanas depois. O
+                            consultor deve diagnosticar a superprodução observando o descompasso entre as operações e a
+                            presença de grandes lotes de peças entre as estações de trabalho.
+                        </p>
+                    </div>
+                </div>
+                <div class="row d-flex align-items-center g-2">
+                    <div class="col-lg-4">
+                        <div class="caixa-ia">
+                            <a data-fancybox="zoom" data-src="Layout/Aula/img/img8.jpg" data-caption="">
+                                <img src="Layout/Aula/img/img8.jpg" alt="imagem ilustrativa" class="img-fluid rounded">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 d-flex flex-column justify-content-center pt-3 ps-5">
+                        <p><strong>Espera</strong></p>
+                        <p>Ineficiência Temporal. Esse desperdício manifesta-se sempre que o tempo não é utilizado de
+                            forma produtiva, seja por pessoas aguardando máquinas, máquinas aguardando materiais, ou
+                            processos parados à espera de informações ou liberações de qualidade. No ambiente de alta
+                            cadência, a espera é um sintoma direto de desbalanceamento de linha ou de baixa
+                            confiabilidade dos equipamentos. Quando um operador permanece ocioso enquanto uma máquina
+                            realiza um ciclo automático, ou quando uma linha inteira para devido a um setup demorado ou
+                            uma quebra de manutenção, o Lead Time do produto é estendido sem agregar qualquer valor. A
+                            redução sistemática das esperas não apenas melhora a produtividade, mas também reduz o
+                            estresse sobre a força de trabalho e aumenta a previsibilidade das entregas, fator crítico
+                            para a manutenção da confiança nas relações entre fornecedores e montadoras.
+                        </p>
+                    </div>
+                </div>
+                <div class="row d-flex align-items-center g-2">
+                    <div class="col-lg-4">
+                        <div class="caixa-ia">
+                            <a data-fancybox="zoom" data-src="Layout/Aula/img/img9.jpg" data-caption="">
+                                <img src="Layout/Aula/img/img9.jpg" alt="imagem ilustrativa" class="img-fluid rounded">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 d-flex flex-column justify-content-center pt-3 ps-5">
+                        <p><strong>Transporte</strong></p>
+                        <p>Movimentação de Materiais. O transporte é definido como a movimentação de materiais, peças ou
+                            produtos acabados de um local para outro, uma atividade que, embora necessária em certa
+                            medida, não altera as propriedades do produto e, portanto, não agrega valor. O uso intensivo
+                            de empilhadeiras, paleteiras e caminhões internos não apenas eleva os custos operacionais e
+                            de manutenção, mas também aumenta o risco de danos aos materiais e acidentes de trabalho. O
+                            consultor deve avaliar o fluxo logístico interno e propor a transição para layouts
+                            celulares, onde as máquinas são dispostas em sequência de processo para permitir o fluxo
+                            unitário e minimizar a distância percorrida. A eliminação do transporte desnecessário exige
+                            que o consultor questione a localização de estoques e a configuração das linhas de produção,
+                            buscando sempre a proximidade máxima entre as etapas de transformação. Ao reduzir o
+                            transporte, a empresa ganha agilidade, reduz custos logísticos e libera espaço que pode ser
+                            utilizado para atividades produtivas.
+                        </p>
+                    </div>
+                </div>
+                <div class="row d-flex align-items-center g-2">
+                    <div class="col-lg-4">
+                        <div class="caixa-ia">
+                            <a data-fancybox="zoom" data-src="Layout/Aula/img/img10.jpg" data-caption="">
+                                <img src="Layout/Aula/img/img10.jpg" alt="imagem ilustrativa" class="img-fluid rounded">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 d-flex flex-column justify-content-center pt-3 ps-5">
+                        <p><strong>Processamento excessivo</strong></p>
+                        <p>Também chamado de superprocessamento, esse desperdício ocorre quando se realiza mais trabalho
+                            em uma peça do que o exigido pelo cliente ou quando se utiliza ferramentas de alta precisão
+                            para tarefas que não as demandam. No rigoroso ambiente automotivo, este desperdício é muitas
+                            vezes sutil, manifestando-se em tolerâncias de usinagem mais estreitas do que o necessário,
+                            polimentos extras em superfícies não visíveis ou inspeções redundantes que não previnem
+                            defeitos, mas apenas os constatam. Ao alinhar o processamento estritamente ao que agrega
+                            valor, a organização reduz seus custos variáveis e aumenta a capacidade produtiva sem
+                            investimentos em novos equipamentos, otimizando os recursos existentes para atender às metas
+                            de competitividade e inovação do setor.
+                        </p>
+                    </div>
+                </div>
+                <div class="row d-flex align-items-center g-2">
+                    <div class="col-lg-4">
+                        <div class="caixa-ia">
+                            <a data-fancybox="zoom" data-src="Layout/Aula/img/img11.jpg" data-caption="">
+                                <img src="Layout/Aula/img/img11.jpg" alt="imagem ilustrativa" class="img-fluid rounded">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 d-flex flex-column justify-content-center pt-3 ps-5">
+                        <p><strong>Estoque</strong></p>
+                        <p>O estoque é frequentemente descrito no Lean como o "iceberg" que oculta as ineficiências de
+                            uma operação. Ele compreende matérias-primas, Work-in-Process (WIP) e produtos acabados que
+                            não estão sendo processados ou vendidos. No setor automotivo, o estoque excessivo é uma
+                            herança da produção em massa, utilizada para proteger a planta contra incertezas de
+                            fornecimento, quebras de máquinas ou problemas de qualidade. No entanto, o custo de manter
+                            esse estoque é altíssimo: ele imobiliza capital de giro, exige grandes áreas de armazenagem,
+                            requer movimentação constante e esconde a obsolescência, especialmente em um mercado que
+                            exige atualizações tecnológicas frequentes. A técnica para combater o estoque é a
+                            implementação do Just-in-Time e de sistemas de produção puxada via Kanban, onde o nível de
+                            inventário é rigorosamente controlado e dimensionado para suportar apenas a variabilidade
+                            inevitável do processo. O consultor deve trabalhar na redução dos tempos de atravessamento
+                            (Lead Time) para que a necessidade de estoques de segurança diminua.
+                        </p>
+                    </div>
+                </div>
+                <div class="row d-flex align-items-center g-2">
+                    <div class="col-lg-4">
+                        <div class="caixa-ia">
+                            <a data-fancybox="zoom" data-src="Layout/Aula/img/img12.jpg" data-caption="">
+                                <img src="Layout/Aula/img/img12.jpg" alt="imagem ilustrativa" class="img-fluid rounded">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 d-flex flex-column justify-content-center pt-3 ps-5">
+                        <p><strong>Movimentação</strong></p>
+                        <p>O desperdício de movimentação refere-se a qualquer movimento físico realizado pelos
+                            operadores que não contribua diretamente para a agregação de valor ao produto, como caminhar
+                            para buscar ferramentas, inclinar-se excessivamente, girar para alcançar peças ou procurar
+                            instruções de trabalho. Diferente do transporte, que foca no material, a movimentação foca
+                            no ser humano. A redução da movimentação não apenas aumenta a cadência da produção, mas
+                            também melhora o clima organizacional, pois demonstra o respeito da empresa pela integridade
+                            física do colaborador. Ao eliminar movimentos inúteis, é liberado tempo do operador para
+                            atividades de inspeção de qualidade na fonte e participação em ciclos de melhoria (Kaizen),
+                            fortalecendo a base sociotécnica do Lean.
+                        </p>
+                    </div>
+                </div>
+                <div class="row d-flex align-items-center g-2">
+                    <div class="col-lg-4">
+                        <div class="caixa-ia">
+                            <a data-fancybox="zoom" data-src="Layout/Aula/img/img13.jpg" data-caption="">
+                                <img src="Layout/Aula/img/img13.jpg" alt="imagem ilustrativa" class="img-fluid rounded">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 d-flex flex-column justify-content-center pt-3 ps-5">
+                        <p><strong>Defeitos</strong></p>
+                        <p>Defeitos são produtos ou serviços que não atendem às especificações e exigem retrabalho,
+                            reparo ou descarte. No setor automotivo, o custo de um defeito é exponencial: ele consome
+                            materiais, energia, tempo de máquina e mão de obra, além de gerar custos logísticos de
+                            devolução e, no pior cenário, recalls que danificam a imagem da marca e geram passivos
+                            legais vultosos. Cada operador é responsável pela qualidade do que produz e tem a autoridade
+                            (e o dever) de parar a linha se detectar uma anomalia. Algumas ferramentas devem ser
+                            implementadas para impedir fisicamente a ocorrência de falhas. A exigência de zero defeito é
+                            ainda mais crítica devido aos novos padrões de segurança; um componente defeituoso pode
+                            comprometer o desempenho do veículo. A eliminação de defeitos é a forma mais pura de redução
+                            de desperdício, pois evita o consumo de recursos em algo que será descartado.
+                        </p>
+                    </div>
+                </div>
+                <div class="row d-flex align-items-center g-2">
+                    <div class="col-lg-4">
+                        <div class="caixa-ia">
+                            <a data-fancybox="zoom" data-src="Layout/Aula/img/img14.jpg" data-caption="">
+                                <img src="Layout/Aula/img/img14.jpg" alt="imagem ilustrativa" class="img-fluid rounded">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 d-flex flex-column justify-content-center pt-3 ps-5">
+                        <p><strong>Talento não utilizado</strong></p>
+                        <p>Ocorre quando as organizações falham em aproveitar o conhecimento, a criatividade e as
+                            habilidades práticas de seus colaboradores. Em muitas fábricas espera-se que o operador
+                            apenas "execute", enquanto o pensamento fica restrito à engenharia e gerência. O consultor
+                            Lean avançado reconhece que esta é uma perda inestimável, pois quem melhor conhece os
+                            problemas do dia a dia é quem opera o processo. O papel do líder, sob a ótica do consultor,
+                            muda de "comando e controle" para "coach e facilitador". Ao eliminar o desperdício de
+                            talento, a empresa aumenta sua capacidade de inovação e agilidade. O engajamento dos
+                            colaboradores na resolução de problemas complexos cria uma cultura de aprendizado
+                            organizacional que é muito difícil de ser copiada pela concorrência, tornando-se uma
+                            vantagem competitiva sustentável que garante a perenidade da empresa em um setor em profunda
+                            transformação tecnológica.
+                        </p>
+                    </div>
+                </div>
+                <div class="row g-2">
+                    <p>Reflita sobre os desperdícios apresentados e considere como eles podem ser identificados em
+                        diferentes tarefas e ações da empresa, a fim de promover melhorias contínuas e sustentáveis.
+                        Para testar seus conhecimentos, faça a atividade a seguir!</p>
+                </div>
+                <!-- Ex 3 -->
+                <div class="row py-3 js-exercise g-2" id="ex-3" data-type="single">
+                    <div class="col-lg-10 mx-auto py-5 border rounded">
+                        <div class="m-3">
+                            <p><strong>2.</strong> No contexto do Lean Manufacturing, a identificação e a eliminação dos
+                                desperdícios constituem elementos fundamentais para a melhoria do desempenho dos
+                                processos. Os desperdícios representam atividades que consomem recursos, mas não agregam
+                                valor ao produto ou serviço sob a perspectiva do cliente. Sobre isso, considere:</p>
+                            <ul class="ms-3" style="list-style: upper-roman;">
+                                <li> O desperdício de superprodução ocorre quando são produzidos itens antes, em maior
+                                    quantidade ou mais rapidamente do que a demanda exige.</li>
+                                <li>O desperdício de espera está relacionado exclusivamente ao tempo em que os
+                                    equipamentos permanecem parados para manutenção corretiva.</li>
+                                <li>O desperdício de transporte refere-se à movimentação desnecessária de materiais,
+                                    produtos ou informações entre diferentes etapas do processo.</li>
+                                <li>O desperdício de processamento excessivo ocorre quando são realizadas atividades,
+                                    operações ou controles que não são necessários para atender aos requisitos do
+                                    cliente.</li>
+                            </ul>
+                            <p>Com base nos conceitos dos desperdícios do Lean Manufacturing que foram estudados,
+                                analise as afirmações e selecione a alternativa correta.</p>
+                        </div>
+                        <div class="list-group m-3 gap-2">
+                            <label
+                                class="list-group-item border rounded-3 py-3 d-flex gap-3 align-items-center cursor-pointer"><input
+                                    class="form-check-input flex-shrink-0 js-option" type="radio" name="q1" value="a">
+                                <span class="opt-label">V – F – V – V</span></label>
+                            <label
+                                class="list-group-item border rounded-3 py-3 d-flex gap-3 align-items-center cursor-pointer"><input
+                                    class="form-check-input flex-shrink-0 js-option" type="radio" name="q1" value="b">
+                                <span class="opt-label">V – F – F – V</span></label>
+                            <label
+                                class="list-group-item border rounded-3 py-3 d-flex gap-3 align-items-center cursor-pointer"><input
+                                    class="form-check-input flex-shrink-0 js-option" type="radio" name="q1" value="c">
+                                <span class="opt-label">F – V – F – V</span></label>
+                            <label
+                                class="list-group-item border rounded-3 py-3 d-flex gap-3 align-items-center cursor-pointer"><input
+                                    class="form-check-input flex-shrink-0 js-option" type="radio" name="q1" value="d">
+                                <span class="opt-label">V – V – F – F</span></label>
+                        </div>
+                        <div class="feedback-container">
+                            <div class="collapse feedback-correto mx-4">
+                                <div class="alert alert-success d-flex align-items-center"><i
+                                        class="bi bi-check-circle-fill me-2 fs-4"></i>
+                                    <!-- Exemplo: Texto personalizado de sucesso -->
+                                    <div class="msg-content">Afirmação II: falsa. O desperdício de espera não se limita
+                                        à manutenção corretiva. Ele também pode ocorrer devido à espera por materiais,
+                                        informações, aprovação, processamento, pessoas, equipamentos ou pela conclusão
+                                        de uma etapa anterior.</div>
+                                </div>
+                            </div>
+                            <div class="collapse feedback-tentativa  mx-4">
+                                <div class="alert alert-warning d-flex align-items-center"><i
+                                        class="bi bi-exclamation-circle-fill me-2 fs-4"></i>
+                                    <div class="msg-content">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapse feedback-erro  mx-4">
+                                <div class="alert alert-danger d-flex align-items-center"><i
+                                        class="bi bi-x-circle-fill me-2 fs-4"></i>
+                                    <!-- Exemplo: Texto personalizado de erro -->
+
+                                    <div class="msg-texto">Afirmação II: falsa. O desperdício de espera não se limita à
+                                        manutenção corretiva. Ele também pode ocorrer devido à espera por materiais,
+                                        informações, aprovação, processamento, pessoas, equipamentos ou pela conclusão
+                                        de uma etapa anterior.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="d-flex mt-5 pt-5 flex-column justify-content-center" id="aula1-section-3">
+            <article class="container">
+                <div class="align-self-start ">
+                    <div class="section-level1" style="border: none;">
+                        <h1>Agregação e não agregação de valor</h1>
+                    </div>
+                </div>
+                <div class="row g-2">
+                    <p>A metodologia Lean Manufacturing, originada do Sistema Toyota de Produção, foca na identificação
+                        e eliminação de atividades que não agregam valor. Nesse contexto, uma atividade é considerada
+                        valiosa quando transforma um produto ou serviço de forma que o consumidor esteja disposto a
+                        pagar. Exemplos de atividades que agregam valor incluem montagem, usinagem e inspeções críticas,
+                        que contribuem para atender às especificações do cliente. O Lean incentiva as organizações a
+                        amplificar essas atividades, tornando os processos mais rápidos, eficientes e competitivos.</p>
+                    <p>Por outro lado, existem atividades que não agregam valor, conhecidas como desperdícios (Muda),
+                        que consomem recursos, tempo e energia sem gerar benefícios ao cliente. Algumas dessas
+                        atividades podem ser classificadas como necessárias, devido a exigências legais, normativas ou
+                        tecnológicas, enquanto outras devem ser eliminadas imediatamente. A análise detalhada do fluxo
+                        de valor (Value Stream Mapping – VSM) é uma das principais ferramentas utilizadas para
+                        identificar essas perdas, permitindo visualizar claramente quais etapas agregam valor e quais
+                        representam oportunidades de melhoria.</p>
+                    <i>Clique em play no vídeo a seguir e confira a agregação e a não agregação de valor na prática.</i>
+
+                    <div class="col-8 mx-auto mt-5">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://redirect.sp.senai.br/lk.php?link=21892773562636a96a65abeb1f" title=""
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section>
+            <article
+                class="d-flex py-0 min-vh-75 flex-column justify-content-center uk-background-cover uk-overflow-hidden uk-light py-5 my-5"
+                style="background-color: #f5f5f5;">
+                <div class="container g-2 text-center">
+                    <h2>A abordagem da agregação e não agregação de valor é essencial para promover a
+                        melhoria contínua e elevar a competitividade organizacional. Ao reduzir desperdícios e otimizar
+                        fluxos produtivos, as empresas diminuem custos, aumentam a produtividade e melhoram a qualidade
+                        dos produtos e serviços. Essa filosofia fortalece a cultura de eficiência e o engajamento das
+                        equipes na busca por processos mais enxutos, estabelecendo uma visão estratégica voltada para a
+                        geração máxima de valor ao cliente e a sustentabilidade dos resultados empresariais.</h2>
+                </div>
+            </article>
+            <article class="container">
+                <div class="row g-2 my-4">
+                    <p>Faça a atividade a seguir e aproveite esta oportunidade para aprofundar seu conhecimento e
+                        aprimorar suas habilidades!</p>
+
+                    <!-- Ex 4 -->
+                    <div class="row py-3 js-exercise g-2" id="ex-4" data-type="single">
+                        <div class="col-lg-10 mx-auto py-5 border rounded">
+                            <div class="m-3">
+                                <p><strong>3.</strong> Uma empresa do setor metalmecânico identificou, por meio da
+                                    aplicação do Value Stream Mapping (VSM), que uma determinada linha de produção
+                                    apresenta elevado tempo de atravessamento (lead time). A análise revelou que apenas
+                                    parte do tempo total corresponde a operações que efetivamente transformam o produto
+                                    de acordo com as especificações do cliente. O restante do tempo está relacionado a
+                                    esperas, movimentações, estoques intermediários, retrabalhos e inspeções.</p>
+                                <p>A equipe responsável pelo processo concluiu, entretanto, que algumas inspeções são
+                                    obrigatórias para atender requisitos legais e de segurança, enquanto determinadas
+                                    movimentações e esperas poderiam ser eliminadas ou reduzidas. Diante desse cenário,
+                                    a organização decidiu priorizar ações de melhoria com base nos princípios do Lean
+                                    Manufacturing.</p>
+                                <p>Considerando a situação apresentada e os princípios de agregação e não agregação de
+                                    valor, assinale a alternativa que apresenta a decisão mais adequada à abordagem
+                                    Lean.</p>
+                            </div>
+                            <div class="list-group m-3 gap-2">
+                                <label
+                                    class="list-group-item border rounded-3 py-3 d-flex gap-3 align-items-center cursor-pointer"><input
+                                        class="form-check-input flex-shrink-0 js-option" type="radio" name="q1"
+                                        value="a">
+                                    <span class="opt-label">Eliminar todas as atividades que não transformam fisicamente
+                                        o produto, incluindo inspeções obrigatórias, pois qualquer atividade que não
+                                        agregue valor diretamente ao produto representa desperdício.</span></label>
+                                <label
+                                    class="list-group-item border rounded-3 py-3 d-flex gap-3 align-items-center cursor-pointer"><input
+                                        class="form-check-input flex-shrink-0 js-option" type="radio" name="q1"
+                                        value="b">
+                                    <span class="opt-label">Identificar e eliminar ou reduzir atividades que não agregam
+                                        valor ao cliente, preservando aquelas que, embora não agreguem valor
+                                        diretamente, sejam necessárias por exigências legais, normativas ou
+                                        tecnológicas.</span></label>
+                                <label
+                                    class="list-group-item border rounded-3 py-3 d-flex gap-3 align-items-center cursor-pointer"><input
+                                        class="form-check-input flex-shrink-0 js-option" type="radio" name="q1"
+                                        value="c">
+                                    <span class="opt-label">Aumentar os estoques intermediários para evitar interrupções
+                                        na produção, mesmo que isso eleve o custo de armazenagem, pois a disponibilidade
+                                        de materiais deve ser priorizada em relação à redução de
+                                        desperdícios.</span></label>
+                                <label
+                                    class="list-group-item border rounded-3 py-3 d-flex gap-3 align-items-center cursor-pointer"><input
+                                        class="form-check-input flex-shrink-0 js-option" type="radio" name="q1"
+                                        value="d">
+                                    <span class="opt-label">Concentrar os esforços exclusivamente no aumento da
+                                        velocidade das operações de transformação, sem analisar esperas, transportes,
+                                        movimentações e estoques, pois essas atividades são inerentes ao processo
+                                        produtivo.</span></label>
+                                <label
+                                    class="list-group-item border rounded-3 py-3 d-flex gap-3 align-items-center cursor-pointer"><input
+                                        class="form-check-input flex-shrink-0 js-option" type="radio" name="q1"
+                                        value="e">
+                                    <span class="opt-label">Considerar todas as atividades existentes como geradoras de
+                                        valor, uma vez que foram incorporadas ao processo produtivo e contribuem, direta
+                                        ou indiretamente, para a entrega do produto ao cliente.</span></label>
+                            </div>
+                            <div class="feedback-container">
+                                <div class="collapse feedback-correto mx-4">
+                                    <div class="alert alert-success d-flex align-items-center"><i
+                                            class="bi bi-check-circle-fill me-2 fs-4"></i>
+                                        <!-- Exemplo: Texto personalizado de sucesso -->
+                                        <div class="msg-content">A abordagem Lean busca eliminar ou reduzir
+                                            desperdícios, como esperas, movimentações desnecessárias, estoques
+                                            excessivos e retrabalhos, sem comprometer atividades que sejam
+                                            indispensáveis por exigências legais, normativas ou tecnológicas. O uso do
+                                            VSM contribui justamente para identificar essas oportunidades de melhoria e
+                                            apoiar a tomada de decisões que aumentem a eficiência dos processos.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="collapse feedback-tentativa  mx-4">
+                                    <div class="alert alert-warning d-flex align-items-center"><i
+                                            class="bi bi-exclamation-circle-fill me-2 fs-4"></i>
+                                        <div class="msg-content">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="collapse feedback-erro  mx-4">
+                                    <div class="alert alert-danger d-flex align-items-center"><i
+                                            class="bi bi-x-circle-fill me-2 fs-4"></i>
+                                        <!-- Exemplo: Texto personalizado de erro -->
+
+                                        <div class="msg-texto">A abordagem Lean busca eliminar ou reduzir desperdícios,
+                                            como esperas, movimentações desnecessárias, estoques excessivos e
+                                            retrabalhos, sem comprometer atividades que sejam indispensáveis por
+                                            exigências legais, normativas ou tecnológicas. O uso do VSM contribui
+                                            justamente para identificar essas oportunidades de melhoria e apoiar a
+                                            tomada de decisões que aumentem a eficiência dos processos.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section>
+            <article
+                class="d-flex py-0 min-vh-75 flex-column justify-content-center uk-background-cover uk-overflow-hidden uk-light py-5"
+                style="background-color: #f5f5f5;">
+                <div class="container g-2">
+                    <h2 class="text-center">O rigor técnico na aplicação da filosofia Lean exige que o consultor avalie
+                        constantemente se as melhorias estão fortalecendo a empresa como um todo, garantindo que a busca
+                        pela eficiência não comprometa a segurança ou a qualidade, elementos que são agora ainda mais
+                        críticos sob as diretrizes do Programa MOVER.</h2>
+                </div>
+            </article>
+            <article class="container">
+                <div class="row g-2 my-5 pb-5">
+                    <i>Clique em play no vídeo a seguir e confira um resumo do que estudamos neste módulo.</i>
+                    <div class="col-8 mx-auto mt-5">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://redirect.sp.senai.br/lk.php?link=21892773562636a96a65abeb1f" title=""
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer class="fixed-bottom bg-menu-color">
+        <div class="progress_section">
+            <div class="progress_bar_wrap">
+                <div class="progress_bar"></div>
+            </div>
+            <div class="progress_num">
+            </div>
+        </div>
+        <!--Desktop-->
+        <div class="d-flex justify-content-evenly align-items-center justify-content-center d-none d-lg-block">
+            <div class="col-sm-12 d-flex justify-content-center">
+                <div class="d-flex justify-content-center align-items-center w-100">
+                    <!-- Coluna para "Anterior" (link oculto) -->
+                    <div class="d-flex justify-content-start align-items-center px-2 pt-2" style="margin-top: 3px">
+
+                        <a href="#" class="d-flex align-items-center" style="visibility: hidden;">
+                            <i class="bx  bxs-left-arrow-circle bx-md copyright px-3"></i>
+                            <span class="text-white"><strong>ANTERIOR</strong></span>
+
+                        </a>
+                    </div>
+
+
+                    <!-- Coluna para "© SENAI" -->
+                    <div class="d-flex justify-content-center align-items-center px-2">
+                        <p class="mx-auto mt-4 pt-2 copyright">© SENAI</p>
+                    </div>
+
+                    <!-- Coluna para "Aula 1" -->
+                    <div class="d-flex justify-content-start align-items-center px-2 pt-2" style="margin-top: 3px; visibility: hidden;">
+                        <a href="aula1.html" class="d-flex align-items-center" ;>
+                            <span class="text-white"><strong>PRÓXIMO</strong></span>
+                            <i class="bx  bxs-right-arrow-circle bx-md copyright px-3"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Mobile-->
+        <div class="d-flex justify-content-evenly  align-items-center  justify-content-center d-lg-none">
+            <div class="col-sm-12 d-flex  justify-content-center">
+                <div class="d-flex justify-content-evenly align-items-center">
+                    <div class="col-sm-2 d-flex justify-content-end">
+                        <a href="#" style="visibility: hidden;"> <i
+                                class="bx mt-3  bxs-left-arrow-circle bx-md copyright px-3"></i>
+                        </a>
+                    </div>
+                    <div class="col-sm-8 d-flex justify-content-center ">
+                        <p class="mx-auto mt-4 copyright">© SENAI</p>
+                    </div>
+                    <div class="col-sm-2 d-flex justify-content-start">
+                        <a href="aula1.html" style="visibility: hidden;"> <i class="bx mt-3  bxs-right-arrow-circle bx-md copyright px-3"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <div class="modal fade" id="resumeFromLastModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Aviso</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Parece que você já iniciou o curso, você pode:</p>
+                </div>
+                <div class="modal-footer">
+                    <div class="d-grid gap-2 mx-auto d-md-flex justify-content-md-end">
+                        <button type="button" class="btn btn-primary" id="resumeFromLastButton">
+                            Continuar de onde parou
+                        </button>
+                        <button type="button" class="btn btn-primary" id="resumeFromBeginning">
+                            Iniciar novamente
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="Layout/Template/bibliotecas/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+<!-- <script src="Layout/Template/js/chart-plugin.js"></script> -->
+<!-- <script src="Layout/Template/bibliotecas/bootstrap/js/popper.min.js"></script> -->
+<script src="Layout/Template/js/main.js"></script>
+<script src="Layout/Template/bibliotecas/youtube/js/youtube-chapters.min.js"></script>
+<script src="Layout/Template/js/exercicios.js"></script>
+<script src="Layout/Aula/js/youtube.js"></script>
+<script src="Layout/Aula/js/videos.js"></script>
+<script src="Layout/Aula/js/graficos.js"></script>
+<script src="menu.js"></script>
+<script src="Layout/Template/bibliotecas/fancybox/fancybox.umd.js"></script>
+<script src="Layout/Template/bibliotecas/webtour/intro.min.js"></script>
+<script src="./creditos.js"></script>
+<script src="./Layout/Aula/js/cardFlip.js"></script>
+
+<script>
+    var intro = introJs();
+    intro.setOptions({
+        'skipLabel': '<span uk-icon="icon: close; ratio: 1"></span>',
+        tooltipClass: 'customTooltip',
+        showProgress: true,
+        dontShowAgain: true,
+        hidePrev: true,
+        hideNext: false,
+        exitOnEsc: true,
+        showStepNumbers: false,
+        showBullets: true,
+        steps: [
+            {
+                element: document.querySelector('.switch-darkmode'),
+                intro: '<p>Modo  Escuro</p>'
+            },
+            {
+                element: document.querySelector('.vlibras-show'),
+                intro: '<p>Aqui você pode encontar o V-Libras'
+            },
+            // {
+            //     element: document.querySelector('#Acessibilidade'),
+            //     intro: '<img src="Layout/Template/img/acessibilidade.png">',
+            // },
+            {
+                element: document.querySelector('#Acessibilidade'),
+                intro: '<p>Aqui você encontra opções de aumentar ou diminuir o tamanho da fonte e ativar ou desativar os modos de visualização monocromático ou para pessoas com daltonismo.</p>',
+            },
+        ]
+    }).start();
+</script>
+<script>
+    Fancybox.bind('[data-fancybox="zoom"]', {
+    });
+</script>
+
+</html>
